@@ -1,0 +1,37 @@
+[90m= [39m[34;4mApp\Domain\AI\Tools\DTO\ToolDefinition[39;24m {#9211
+    +[1mname[22m: [32m"[39m[32msearch_products[39m[32m"[39m,
+    +[1mdescription[22m: [32m"[39m[32mSearches the product catalog using a natural language query.[39m[32m"[39m,
+    +[1magent[22m: [32m"[39m[32mproducts[39m[32m"[39m,
+    +[1mparameters[22m: [
+      [34m"[39m[34mquery[39m[34m"[39m => [
+        [34m"[39m[34mtype[39m[34m"[39m => [32m"[39m[32mstring[39m[32m"[39m,
+        [34m"[39m[34mdescription[39m[34m"[39m => [32m"[39m[32mThe product search query.[39m[32m"[39m,
+        [34m"[39m[34mrequired[39m[34m"[39m => [36mtrue[39m,
+      ],
+    ],
+    +[1mreturns[22m: [
+      [34m"[39m[34mtype[39m[34m"[39m => [32m"[39m[32marray[39m[32m"[39m,
+      [34m"[39m[34mdescription[39m[34m"[39m => [32m"[39m[32mA list of matching products.[39m[32m"[39m,
+    ],
+    +[1mkeywords[22m: [
+      [32m"[39m[32mcerca[39m[32m"[39m,
+      [32m"[39m[32mcercare[39m[32m"[39m,
+      [32m"[39m[32mtrova[39m[32m"[39m,
+      [32m"[39m[32mtrovare[39m[32m"[39m,
+      [32m"[39m[32mmostra[39m[32m"[39m,
+      [32m"[39m[32mdisponibile[39m[32m"[39m,
+      [32m"[39m[32mcatalogo[39m[32m"[39m,
+    ],
+    +[1mdocumentation[22m: <<<[32mEOS[39m
+      [32mUse this tool when the user wants to find one or more products.[39m
+      
+      [32mExamples:[39m
+      [32m- "I am looking for a black jacket."[39m
+      [32m- "Show me running shoes."[39m
+      [32m- "Do you have red Nike shoes?"[39m
+      [32m- "Find me a laptop under 1000 euros."[39m
+      
+      [32mDo not use this tool when the user asks for information[39m
+      [32mabout a specific known order, account, refund or support issue.[39m
+      [32mEOS[39m,
+  }
